@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="Travel_GUI.EventPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Width="1366" Height="768">
+    <Grid Background="White">
+        <Label x:Name="LabelCategory" Content="Категорії:" HorizontalAlignment="Left" Margin="222,255,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Decomart FF 4F"/>
+        <Label x:Name="LabelDescription" Content="Опис:" HorizontalAlignment="Left" Margin="274,329,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Decomart FF 4F"/>
+        <Label x:Name="contentCategory" Content="" HorizontalAlignment="Left" Margin="338,257,0,0" VerticalAlignment="Top" Width="345" Foreground="#FF3C3C3C" FontSize="14"/>
+        <TextBlock x:Name="contentDescription" HorizontalAlignment="Left" Margin="343,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Foreground="#FF3C3C3C" Background="#00000000" FontSize="14" Height="331" MaxHeight="331" MaxWidth="345"><Run Text="He took me by the wrist and held me hard; Then goes he to the length of all his arm, And, with his other hand thus o'er his brow, He falls to such perusal of my face As he would draw it. Long stay'd he so. At last, a little shaking of mine arm, And thrice his head thus waving up and down, He rais'd a sigh so piteous and profound As it did seem to shatter all his bulk And end his being. That done, he lets me go, And with his head over his shoulder turn'd He seem'd to find his way without his eyes,"/><LineBreak/><Run Text="For out o' doors he went without their help"/><LineBreak/><Run Text="And to the last bended their light on me."/></TextBlock>
+        <Label x:Name="contentPlace" Content="" HorizontalAlignment="Left" Margin="338,295,0,0" VerticalAlignment="Top" Width="345" Foreground="#FF3C3C3C" FontSize="14"/>
+        <Label x:Name="LabelPlace" Content="Місце:" HorizontalAlignment="Left" Margin="263,293,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Decomart FF 4F"/>
+        <Grid HorizontalAlignment="Left" Height="150" Margin="0,98,0,0" VerticalAlignment="Top" Width="688">
+            <Rectangle Name="fill" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Fill="#FFF14949" Stroke="#FF3C3C3C"/>
+            <Label x:Name="LabelEventName" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom" Foreground="#FFFFFBFB" FontSize="80" Content="Event Name"  FontFamily="Bebas Neue Thin"/>
+            <Label x:Name="LabelEventName_Copy" Margin="0" Foreground="#26FFFBFB" FontSize="170" Content="Event Name" FontFamily="Bebas Neue Thin" HorizontalAlignment="Center" VerticalAlignment="Center" Height="205" Width="688"/>
+            <Label x:Name="LabelEventName_Copy1" HorizontalAlignment="Left" Margin="-38,-64,0,0" VerticalAlignment="Top" Foreground="#4CFFFBFB" FontSize="120" Content="Event Name"  FontFamily="Bebas Neue Thin"/>
+            <Label x:Name="LabelEventName_Copy2" HorizontalAlignment="Right" Margin="0,102,304,0" VerticalAlignment="Top" Foreground="#66FFFBFB" FontSize="24" Content="Event Name"  FontFamily="Decomart FF 4F"/>
+        </Grid>
+        <Ellipse HorizontalAlignment="Left" Height="500" Margin="-226,186,0,0" Stroke="#FF646464" VerticalAlignment="Top" Width="500" Fill="#19FFFFFF"/>
+        <Label x:Name="dateLabel" Content="10.10.10" HorizontalAlignment="Right" Margin="0,98,678,0" VerticalAlignment="Top" Foreground="#FF3C3C3C" FontFamily="Decomart FF 4F" Cursor="Help" ToolTip="Дата і час проведення заходу!"/>
+        <Label x:Name="number" Content="15" HorizontalAlignment="Right" Margin="0,120,678,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF3C3C3C" RenderTransformOrigin="27.3,-11.462" FontFamily="Decomart FF 4F" Cursor="Help" ToolTip="Кількість учасників заходу!"/>
+        <ScrollViewer x:Name="scrollViewer" HorizontalAlignment="Left" Height="302" Margin="25,0,0,98" VerticalAlignment="Bottom" Width="288" Background="#E5FFFFFF" BorderBrush="#FF3C3C3C">
+            <StackPanel x:Name="subscribersPanel"/>
+        </ScrollViewer>
+        <Label x:Name="friendLabel" Content="учасники" HorizontalAlignment="Left" Margin="25,0,0,400" VerticalAlignment="Bottom" Foreground="White" FontFamily="Bebas Neue Thin" FontSize="48" Height="58"/>
+        <Border x:Name="bord" BorderBrush="#FF3C3C3C" BorderThickness="0.25" HorizontalAlignment="Left" Height="302" Margin="25,368,0,0" VerticalAlignment="Top" Width="288"/>
+        <Ellipse HorizontalAlignment="Left" Height="903" Margin="693,29,-329,-164" Stroke="#FF646464" StrokeThickness="0.3" VerticalAlignment="Top" Width="1002">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF3FFFE" Offset="0"/>
+                    <GradientStop Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="514" Margin="1154,120,-190,0" Stroke="#FF646464" StrokeThickness="0.3" VerticalAlignment="Top" Width="402" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-16.754"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="mainPhotoPlace" HorizontalAlignment="Left" Height="500" Margin="735,153,0,0" Stroke="#FF646464" StrokeThickness="0.3" VerticalAlignment="Top" Width="500" Fill="White"/>
+        <Ellipse x:Name="miniPhotoPlace2" Fill="White" HorizontalAlignment="Left" Height="70" Margin="1252,48,0,0" Stroke="#FF646464" StrokeThickness="0.3" VerticalAlignment="Top" Width="70" MouseLeftButtonUp="miniPhotoPlace_MouseLeftButtonUp" Cursor="Hand"/>
+        <Ellipse x:Name="miniPhotoPlace1" Fill="White" HorizontalAlignment="Left" Height="150" Margin="1085,34,0,0" Stroke="#FF646464" StrokeThickness="0.3" VerticalAlignment="Top" Width="150" MouseLeftButtonUp="miniPhotoPlace_MouseLeftButtonUp" Cursor="Hand"/>
+        <Ellipse x:Name="miniPhotoPlace3" Fill="White" HorizontalAlignment="Left" Height="350" Margin="1016,635,0,-217" Stroke="#FF646464" StrokeThickness="0.3" VerticalAlignment="Top" Width="350" Cursor="Arrow"/>
+        <Label x:Name="exitButton" Content="Повернутись до списку подій" HorizontalAlignment="Left" Margin="423,714,0,0" VerticalAlignment="Top" FontSize="18" Foreground="White" BorderBrush="#FF787878" BorderThickness="1" FontFamily="Decomart FF 4F" Height="44" MouseLeftButtonUp="ExitButton_MouseLeftButtonUp" Cursor="Hand">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF5544" Offset="0"/>
+                    <GradientStop Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label x:Name="joinButton" Content="Приєднатися" HorizontalAlignment="Left" Margin="193,714,0,0" VerticalAlignment="Top" FontSize="18" Foreground="White" BorderBrush="#FF787878" BorderThickness="1" FontFamily="Decomart FF 4F" Height="44" Cursor="Hand" MouseLeftButtonUp="JoinButton_MouseLeftButtonUp">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2BDC6C" Offset="0"/>
+                    <GradientStop Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+    </Grid>
+</UserControl>
