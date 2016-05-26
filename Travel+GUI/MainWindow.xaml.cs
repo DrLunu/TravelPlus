@@ -170,7 +170,6 @@ namespace Travel_GUI
         private void AddBackground()
         {
             Bitmap picture = new Bitmap(@"D:\Bamboleioooo\...пережила\ППЗ\банер.png");
-            Bitmap title = new Bitmap(@"D:\Bamboleioooo\...пережила\ППЗ\банер5.png");
             banner.Source = MainWindow.CreateBitmapSourceFromGdiBitmap(picture);
         }
 
