@@ -10,20 +10,13 @@
             <TextBox x:Name="enterPasswordTB" HorizontalAlignment="Left" Height="23" Margin="210,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Foreground="#FF3C3C3C"/>
             <TextBlock x:Name="_10" HorizontalAlignment="Right" Margin="0,42,199,0" TextWrapping="Wrap" Text="Електронна пошта:" VerticalAlignment="Top" FontSize="18" Foreground="#FF3C3C3C" FontFamily="Decomart FF 4F"/>
             <TextBlock x:Name="_11" HorizontalAlignment="Right" Margin="0,96,199,0" TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Top" FontSize="18" Foreground="#FF3C3C3C" FontFamily="Decomart FF 4F"/>
-            <Ellipse x:Name="enterButton" HorizontalAlignment="Left" Margin="19,82,0,-41" Stroke="#FF3C3C3C" Width="100" Cursor="Hand" MouseLeftButtonUp="enterButton_MouseLeftButtonUp">
-                <Ellipse.Fill>
-                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                        <GradientStop Color="#FF4EE090"/>
-                        <GradientStop Offset="1"/>
-                    </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Label x:Name="labelEnter" Content="Авторизація" HorizontalAlignment="Left" Margin="161,-35,0,0" VerticalAlignment="Top" FontFamily="Bebas Neue Thin" FontSize="48" Foreground="White"/>
-            <Label x:Name="enterButtonLabel" Content="Вхід" HorizontalAlignment="Left" Margin="31,97,0,-2" VerticalAlignment="Top" FontFamily="Decomart FF 4F" FontSize="36" Foreground="White" Cursor="Hand" MouseLeftButtonUp="enterButton_MouseLeftButtonUp"/>
+            <Label x:Name="labelEnter" Content="Авторизація" HorizontalAlignment="Left" Margin="121,-35,0,0" VerticalAlignment="Top" FontFamily="Bebas Neue Thin" FontSize="48" Foreground="White"/>
+            <Label x:Name="enterButtonLabel_Copy" Content="Вхід" HorizontalAlignment="Left" Margin="27,79,0,0" VerticalAlignment="Top" FontFamily="Decomart FF 4F" FontSize="36" Foreground="#FF1A3753" Cursor="Hand" MouseLeftButtonUp="enterButton_MouseLeftButtonUp"/>
+            <Label x:Name="enterButtonLabel" Content="Вхід" HorizontalAlignment="Left" Margin="25,79,0,0" VerticalAlignment="Top" FontFamily="Decomart FF 4F" FontSize="36" Foreground="White" Cursor="Hand" MouseLeftButtonUp="enterButton_MouseLeftButtonUp"/>
             <Label x:Name="_13" Content="Авторизація" HorizontalAlignment="Left" Margin="0,-65,0,0" VerticalAlignment="Top" FontFamily="Bebas Neue Thin" FontSize="72" Foreground="#33FFFFFF"/>
             <Label x:Name="_12" Content="Авторизація" HorizontalAlignment="Left" Margin="143,-11,0,0" VerticalAlignment="Top" FontFamily="Bebas Neue Thin" FontSize="60" Foreground="#33FFFFFF"/>
             <TextBox x:Name="enterE_mailTB" HorizontalAlignment="Left" Height="23" Margin="210,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Foreground="#FF3C3C3C"/>
-        </Grid>
+            </Grid>
         <Grid x:Name="upGrid" HorizontalAlignment="Left" Height="643" Margin="99,0,0,520" VerticalAlignment="Bottom" Width="535">
             <Grid x:Name="regGrid" HorizontalAlignment="Center" Height="571" Width="404" VerticalAlignment="Bottom" Margin="51,0,80,72">
                 <Grid.RowDefinitions>
@@ -32,14 +25,6 @@
                 </Grid.RowDefinitions>
                 <Border BorderBrush="#FF3C3C3C" BorderThickness="1" Background="#66FFFFFF"/>
                 <Label x:Name="label1" Content="Зареeструватись" HorizontalAlignment="Left" Margin="8,495,-3,0" VerticalAlignment="Top" FontFamily="Decomart FF 4F" FontSize="48" Foreground="#33FFFFFF" Background="#00000000"/>
-                <Ellipse x:Name="upButton" HorizontalAlignment="Left" Margin="69,521,0,0" Stroke="#FF3C3C3C" Width="30" Cursor="Hand" Height="30" VerticalAlignment="Top">
-                    <Ellipse.Fill>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FFFF6947" Offset="0.004"/>
-                            <GradientStop Offset="1"/>
-                        </LinearGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
                 <TextBox x:Name="nameTB" HorizontalAlignment="Left" Height="23" Margin="189,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Foreground="#FF3C3C3C"/>
                 <TextBlock x:Name="_1" HorizontalAlignment="Right" Margin="0,146,221,0" TextWrapping="Wrap" Text="Ім'я:" VerticalAlignment="Top" FontSize="18" Foreground="#FF3C3C3C" FontFamily="Decomart FF 4F"/>
                 <TextBox x:Name="surnameTB" HorizontalAlignment="Left" Height="23" Margin="189,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Foreground="#FF3C3C3C"/>
@@ -60,7 +45,6 @@
                 <TextBlock x:Name="_7" HorizontalAlignment="Right" Margin="0,386,223,0" TextWrapping="Wrap" Text="Електронна пошта:" VerticalAlignment="Top" FontSize="18" Foreground="#FF3C3C3C" FontFamily="Decomart FF 4F"/>
                 <Label x:Name="labelForm" Content="Анкета" HorizontalAlignment="Left" Margin="127,56,0,0" VerticalAlignment="Top" FontFamily="Bebas Neue Thin" FontSize="60" Foreground="White" ToolTip="Усі поля обов'язкові для заповнення!"/>
                 <Label x:Name="labelReg" Content="Зареєструватись" HorizontalAlignment="Left" Margin="100,515,0,0" VerticalAlignment="Top" FontFamily="Decomart FF 4F" FontSize="36" Foreground="#FF367A5B" Height="46" Cursor="Hand" MouseLeftButtonUp="labelReg_MouseLeftButtonUp" />
-                <Label x:Name="arrow" Content="^" HorizontalAlignment="Left" Margin="72,513,0,0" Foreground="#FF3C3C3C" FontSize="22" Cursor="Hand" MouseLeftButtonUp="upButton_MouseLeftButtonUp" Height="27" VerticalAlignment="Top"/>
                 <Expander Name="categoryList" Header="" HorizontalAlignment="Left" Margin="353,285,-75,0" VerticalAlignment="Top" Height="217" Width="126">
                     <StackPanel Background="White" Margin="0">
                         <Label x:Name="c1" Content="Концерти і вистави" HorizontalAlignment="Left" VerticalAlignment="Top" Height="24" Width="124" Cursor="Hand" MouseEnter="c_MouseEnter" Foreground="#FF3C3C3C" MouseLeave="c_MouseLeave" MouseLeftButtonUp="c_MouseLeftButtonUp"/>
@@ -75,7 +59,7 @@
                 </Expander>
                 <TextBox x:Name="yearTB" HorizontalAlignment="Left" Height="23" Margin="289,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Foreground="#FF3C3C3C"/>
                 <TextBox x:Name="monthTB" HorizontalAlignment="Left" Height="23" Margin="239,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" Foreground="#FF3C3C3C"/>
-                <Label x:Name="clear" Content="видалити" HorizontalAlignment="Left" Margin="189,350,0,0" VerticalAlignment="Top" Foreground="#FF3C3C3C" BorderBrush="#FF919191" Height="23" FontFamily="Decomart FF 4F" FontSize="14" BorderThickness="1" Width="75" Cursor="Hand" MouseLeftButtonUp="clear_MouseLeftButtonUp">
+                <Label x:Name="clear" Content="видалити" HorizontalAlignment="Left" Margin="189,350,0,0" VerticalAlignment="Top" Foreground="#FF3C3C3C" BorderBrush="#FF919191" Height="33" FontFamily="Decomart FF 4F" FontSize="14" BorderThickness="1" Width="75" Cursor="Hand" MouseLeftButtonUp="clear_MouseLeftButtonUp">
                     <Label.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FFFF3838"/>

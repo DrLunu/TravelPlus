@@ -49,7 +49,7 @@ namespace Travel_GUI
         {
             InitializeComponent();
 
-            AddBackground();
+            //AddBackground();
             EnterPage = new EnterPage();
             Head.Children.Add(EnterPage);
         }
@@ -145,11 +145,11 @@ namespace Travel_GUI
 
         // My methods
 
-        private void AddBackground()
-        {
-            Bitmap picture = new Bitmap(@"D:\Bamboleioooo\ППЗ\банер4.png");
-            banner.Source = MainWindow.CreateBitmapSourceFromGdiBitmap(picture);
-        }
+        //private void AddBackground()
+        //{
+        //    Bitmap picture = new Bitmap(@"D:\Bamboleioooo\ППЗ\банер4.png");
+        //    banner.Source = MainWindow.CreateBitmapSourceFromGdiBitmap(picture);
+        //}
 
         private void BannerAnimation()
         {

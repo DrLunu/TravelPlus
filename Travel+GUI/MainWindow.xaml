@@ -6,8 +6,7 @@
         <ScrollViewer Name="scrollViewer" RenderTransformOrigin="0.5,0.5" ScrollViewer.VerticalScrollBarVisibility="Hidden" >
             <StackPanel Name="elementPanel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                 <Grid x:Name="Head" Height="677" VerticalAlignment="Top">
-                    <Image x:Name="banner" Margin="-284,0,0,0" Stretch="Uniform"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
-                    <Image x:Name="title" Margin="-284,0,0,0" Stretch="Uniform"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <Image x:Name="banner" Margin="0,0,0,0" Stretch="Fill"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
             </StackPanel>
     </ScrollViewer>

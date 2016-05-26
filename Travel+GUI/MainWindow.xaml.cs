@@ -172,7 +172,6 @@ namespace Travel_GUI
             Bitmap picture = new Bitmap(@"D:\Bamboleioooo\...пережила\ППЗ\банер.png");
             Bitmap title = new Bitmap(@"D:\Bamboleioooo\...пережила\ППЗ\банер5.png");
             banner.Source = MainWindow.CreateBitmapSourceFromGdiBitmap(picture);
-            this.title.Source = MainWindow.CreateBitmapSourceFromGdiBitmap(title);
         }
 
         private void BannerAnimation(bool toTheRight)
@@ -198,7 +197,6 @@ namespace Travel_GUI
                 titleRightAnimation.From = from;
                 titleRightAnimation.To = toTitle;
                 banner.BeginAnimation(MarginProperty, bannerRightAnimation);
-                title.BeginAnimation(MarginProperty, titleRightAnimation);
             }
             else
             {
@@ -207,7 +205,6 @@ namespace Travel_GUI
                 titleRightAnimation.From = toTitle;
                 titleRightAnimation.To = from;
                 banner.BeginAnimation(MarginProperty, bannerRightAnimation);
-                title.BeginAnimation(MarginProperty, titleRightAnimation);
             }
         }
         

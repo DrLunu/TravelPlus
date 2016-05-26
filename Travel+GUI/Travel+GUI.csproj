@@ -60,12 +60,9 @@
     <Compile Include="DataEventPreview.cs" />
     <Compile Include="DataMini.cs" />
     <Compile Include="DataUserPage.cs" />
-    <Compile Include="EnterPageEngine.cs" />
     <Compile Include="EventPageEngine.cs" />
-    <Compile Include="EventPreviewEngine.cs" />
     <Compile Include="FriendPageEngine.cs" />
     <Compile Include="HomePageEngine.cs" />
-    <Compile Include="MainWindowEngine.cs" />
     <Compile Include="RegistrationData.cs" />
     <Compile Include="EventPage.xaml.cs">
       <DependentUpon>EventPage.xaml</DependentUpon>
@@ -188,19 +185,12 @@
     <None Include="Resources\379921-2450x1640.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\банер.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\банер2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\банер3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\банер4.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\банер.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
