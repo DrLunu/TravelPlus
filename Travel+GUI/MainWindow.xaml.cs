@@ -169,7 +169,7 @@ namespace Travel_GUI
 
         private void AddBackground()
         {
-            Bitmap picture = new Bitmap(@"D:\Documents\For C Sharp\TravelPlus\TravelPlus\Travel+GUI\Resources\банер.png");
+            Bitmap picture = new Bitmap(@"D:\Bamboleioooo\...пережила\ППЗ\банер.png");
             banner.Source = MainWindow.CreateBitmapSourceFromGdiBitmap(picture);
         }
 

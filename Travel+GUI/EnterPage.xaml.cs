@@ -173,6 +173,21 @@ namespace Travel_GUI
             {
                 Enter(engine.EnterDeal(enterE_mailTB, enterPasswordTB));
             }
+
+            using (var db = new TravelPlusContext())
+            {
+                db.Users.Add(new Models.User
+                {
+                    Birthday = new DateTime(),
+                    City = "",
+                    Contacts = "",
+                    Email = "",
+                    Name = "",
+                    Password = "",
+                    Surname = ""
+                });
+                db.SaveChanges();
+            }
         }
 
         private void upButton_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
